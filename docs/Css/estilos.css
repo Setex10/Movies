@@ -1,0 +1,274 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #1D1D1F;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	align-items: center;
+	justify-content: CENTER;
+}
+
+/* Menu  */
+    header .brand img {
+	height: 60px;
+	margin-top: 6px;
+  }
+  
+    header {
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 80px;
+	transition: 0.6s;
+	height: 70px;
+  }
+  
+  header.down {
+	background: #000000;
+	padding: 15px 80px;
+  }
+  
+  header .brand {
+	color: #fff;
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+  }
+  
+  header .menu {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  header .menu ul {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  header .menu ul li {
+	list-style: none;
+  }
+  
+  header .menu a {
+	color: #fff;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 500;
+	text-decoration: none;
+	margin: 0 30px;
+	padding: 7px 12px;
+	transition: 0.3s;
+	transition-property: color;
+  }
+  
+  header .menu a:hover {
+	color: #000;
+	background: #fff;
+  }
+  
+  .section-two {
+	padding: 20px;
+  }
+  
+  header .btn {
+	color: #fff;
+	font-size: 25px;
+	cursor: pointer;
+	display: none;
+  }
+  
+  @media (max-width: 800px) {
+	header,
+	header.down {
+	  padding: 20px 40px;
+	}
+	header .btn {
+	  display: block;
+	}
+  
+	header .menu {
+	  position: fixed;
+	  background: #000000;
+	  min-width: 100%;
+	  height: 100vh;
+	  top: 0;
+	  right: -100%;
+	  padding: 80px 50px;
+	  transition: 0.5s;
+	  transition-property: right;
+	}
+  
+	header .menu ul {
+	  flex-direction: column;
+	}
+  
+	header .menu.active {
+	  right: 0;
+	}
+  
+	header .menu .close-btn {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  margin: 25px;
+	}
+  
+	header .menu a {
+	  display: block;
+	  font-size: 20px;
+	  margin: 20px;
+	  padding: 0 15px;
+	}
+  }
+  
+
+
+.contenedor {
+	max-width: 1200px;
+	width: 90%;
+	margin: auto;
+	margin-top: 60px;
+	}
+
+/* --- --- CONTENEDOR PRINCIPAL --- --- */
+
+.contenido-principal {
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+}
+
+.contenido-principal__imagen {
+	vertical-align: top;
+	margin-right: 20px;
+	width: 50%;
+	max-width: 550px;
+}
+
+.contenido-principal__contenedor {
+	width: 50%;
+}
+
+.contenido-principal__titulo {
+	font-weight: normal;
+	font-size: 28px;
+}
+
+.contenido-principal__resumen {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 30px;
+	color: #CFCFCF;
+}
+
+/* --- --- CAROUSEL --- --- */
+.carousel__contenedor {
+    position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: #fff;
+	opacity: 20%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
+}
+
+.carousel__anterior {
+	left: -30px;
+}
+
+.carousel__siguiente {
+	right: -30px;
+}
+
+.carousel__lista {
+	overflow: hidden;
+}
+
+
+.carousel__elemento {
+	text-align: center;
+}
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #fff;
+	opacity: .2;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		padding: 40px 0;
+	}
+
+	.contenido-principal {
+		flex-direction: column;
+	}
+
+	.contenido-principal > * {
+		width: 100%;
+	}
+}
+
+.carousel__elemento img{
+    object-fit: cover;
+    width: 280px;
+    height: 180px;
+}
+
+h2{
+    text-align:left;
+    font-size:20px;
+}
+
+h3{
+	font-size:50px;
+
+}
+
+.noticias-contenedor{
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+}
+
+.noticias{
+	Display: flex;
+}

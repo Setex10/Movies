@@ -1,0 +1,57 @@
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contenedor-contactar h4 {
+    font-size: 30px;
+    text-align: center;
+    color: #fffbff;
+  }
+  .email {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 300px;
+    font-size: 20px;
+    background-color: #fffbff;
+    min-width: 100px;
+    border: none;
+  }
+  
+  .mensaje {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 70px;
+    font-size: 20px;
+    background-color: #fffbff;
+    border: none;
+  }
+  
+  .enviar {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    width: 150px;
+    font-size: 20px;
+    background-color: #fffbff;
+    color: #0d0210;
+    border: none;
+  }
+  
+  .email:hover {
+    background-color: #c9b7c7;
+    transition: 0.5s;
+  }
+  
+  .mensaje:hover {
+    background-color: #c9b7c7;
+    transition: 0.5s;
+  }
+  .enviar:hover {
+    background-color: #1f171d;
+    color: #fffbff;
+    transition: 0.9s;
+  }
+  
