@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../../Img/Logo/Movies.JPG">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="../Js/Glider.js-master/glider.min.css">
+	<link rel="stylesheet" href="../../Css/estilos.css">
+	<link rel="stylesheet" href="../../Css/menu-peliculas.css">
+    <title>Movies</title>
+</head>
+<body>
+    <!-- Menu -->
+	<header>
+		<a href="../../index.html" class="brand">
+			<img src="../../Img/Logo/Movies.JPG">
+		</a>
+		<nav class="menu">
+		  <div class="btn">
+			<i class="fas fa-times close-btn"></i>
+		  </div>
+		  <ul>
+			  <li><a href="../../index.html">Inicio</a></li>
+			  <li><a href="../index-2.html">Sobre nosotros</a></li>
+		  </ul>
+		</nav>
+		<div class="btn">
+		  <i class="fas fa-bars menu-btn"></i>
+		</div>
+	  </header>
+
+    <section>
+        <div class="contenedor-informacion-ps">
+            <img src="../../Img/fondo-info/Transformers The Last Knight.png" alt="Transformers The Last Knight">
+            <div class="informacion">
+                <h1>Transformers The Last Knight</h1>
+                <p>Transformers: The Last Knight es una película de acción de ciencia ficción estadounidense de 2017 basada en la línea de juguetes Transformers. Es la quinta entrega de la 
+					serie de películas de acción en vivo Transformers y la secuela de Age of Extinction (2014).</p>
+
+                <p>The film premiered at Odeon Leicester Square in London on June 18, 2017, and was theatrically released in the United States on June 21, 2017, by Paramount Pictures. 
+					The film was panned by critics and is the worst-reviewed film of the Transformers series.</p>
+                    
+                <p>La crítica se centró en su tiempo de ejecución, trama, dirección, narrativa, falta de desarrollo de personajes, guión, cinematografía y frecuentes cambios de formato en todo momento.
+					 En la 38ª edición de los Golden Raspberry Awards, fue nominada a diez premios, incluyendo Peor Película, Peor Director y Peor Actor para Wahlberg.</p>
+
+                <a target="u_blank" href="https://www.amazon.com/Transformers-Last-Knight-Mark-Wahlberg/dp/B071JSGNW6"><i class='bx bx-play-circle'> Duración: 149 Minutos </i></a>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+      <script>
+        //javascript for navigation bar effect on scroll
+window.addEventListener("scroll", function(){
+	var header = document.querySelector("header");
+	header.classList.toggle('down', window.scrollY > 0);
+
+	  //change logo
+	  var logo = document.querySelector(".brand img");
+	  if (window.scrollY>0) {
+		  logo.setAttribute('src', `../../Img/Logo/Movies.JPG`);
+	  }else{
+		  logo.setAttribute('src', '../../Img/Logo/Movies.JPG');
+	  }
+
+  });
+
+  //javascript for responsive navigation sidebar menu
+  var menu = document.querySelector('.menu');
+  var menuBtn = document.querySelector('.menu-btn');
+  var closeBtn = document.querySelector('.close-btn');
+
+  menuBtn.addEventListener("click", () => {
+	menu.classList.add('active');
+  });
+
+  closeBtn.addEventListener("click", () => {
+	menu.classList.remove('active');
+  });
+    </script>
+	<script src="./Js/Glider.js-master/glider.min.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="./Js/app.js"></script>
+</body>
+</html>

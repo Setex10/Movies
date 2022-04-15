@@ -237,4 +237,3 @@ window.addEventListener('load', function(){
 		]
 	});
 })
-

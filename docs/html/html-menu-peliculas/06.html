@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../Img/Logo/Movies.JPG">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="../Js/Glider.js-master/glider.min.css">
+	<link rel="stylesheet" href="../../Css/estilos.css">
+	<link rel="stylesheet" href="../../Css/menu-peliculas.css">
+    <title>Movies</title>
+</head>
+<body>
+    <!-- Menu -->
+	<header>
+		<a href="../../index.html" class="brand">
+			<img src="../../Img/Logo/Movies.JPG">
+		</a>
+		<nav class="menu">
+		  <div class="btn">
+			<i class="fas fa-times close-btn"></i>
+		  </div>
+		  <ul>
+			  <li><a href="../../index.html">Inicio</a></li>
+			  <li><a href="../index-2.html">Sobre nosotros</a></li>
+		  </ul>
+		</nav>
+		<div class="btn">
+		  <i class="fas fa-bars menu-btn"></i>
+		</div>
+	  </header>
+
+    <section>
+        <div class="contenedor-informacion-ps">
+            <img src="../../Img/fondo-info/Harry Potter Y La Piedra Filosofal.png" alt="Harry Potter Y La Piedra Filosofal">
+            <div class="informacion">
+                <h1>Harry Potter Y La Piedra Filosofal</h1>
+                <p>Harry Potter crece en la casa de sus tíos, los Dursley, quienes le ocultan su verdadera historia familiar; al cumplir Harry once años de edad, empiezan a llegarle 
+					cartas de remitente desconocido, que van aumentando en número a medida que sus tíos no dejan que las abra. </p>
+
+                <p>Se descubre entonces que los Potter no murieron en un accidente de coche como se le había dicho a Harry, sino que habían sido asesinados en la noche de Halloween por un hechicero tenebroso 
+					conocido como lord Voldemort, quien había aterrorizado a la comunidad mágica británica años atrás. </p>
+                    
+                <p>Sin embargo, algo ocurrió esa noche: Voldemort consiguió matar al matrimonio Potter pero no pudo asesinar al bebé, perdió su cuerpo y le dejó al niño una cicatriz permanente en 
+					forma de rayo en su frente.</p>
+
+                <a target="u_blank" href="https://www.hbomax.com/mx/es/feature/urn:hbo:feature:GYjt1ywlfs3jDZAEAAAAM"><i class='bx bx-play-circle'> Duracion: 152 minutos</i></a>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+      <script>
+        //javascript for navigation bar effect on scroll
+window.addEventListener("scroll", function(){
+	var header = document.querySelector("header");
+	header.classList.toggle('down', window.scrollY > 0);
+
+	  //change logo
+	  var logo = document.querySelector(".brand img");
+	  if (window.scrollY>0) {
+		  logo.setAttribute('src', `../../Img/Logo/Movies.JPG`);
+	  }else{
+		  logo.setAttribute('src', '../../Img/Logo/Movies.JPG');
+	  }
+
+  });
+
+  //javascript for responsive navigation sidebar menu
+  var menu = document.querySelector('.menu');
+  var menuBtn = document.querySelector('.menu-btn');
+  var closeBtn = document.querySelector('.close-btn');
+
+  menuBtn.addEventListener("click", () => {
+	menu.classList.add('active');
+  });
+
+  closeBtn.addEventListener("click", () => {
+	menu.classList.remove('active');
+  });
+    </script>
+	<script src="./Js/Glider.js-master/glider.min.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="./Js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../../Img/Logo/Movies.JPG">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="../Js/Glider.js-master/glider.min.css">
+	<link rel="stylesheet" href="../../Css/estilos.css">
+	<link rel="stylesheet" href="../../Css/menu-peliculas.css">
+    <title>Movies</title>
+</head>
+<body>
+    <!-- Menu -->
+	<header>
+		<a href="../../index.html" class="brand">
+			<img src="../../Img/Logo/Movies.JPG">
+		</a>
+		<nav class="menu">
+		  <div class="btn">
+			<i class="fas fa-times close-btn"></i>
+		  </div>
+		  <ul>
+			  <li><a href="../../index.html">Inicio</a></li>
+			  <li><a href="../index-2.html">Sobre nosotros</a></li>
+		  </ul>
+		</nav>
+		<div class="btn">
+		  <i class="fas fa-bars menu-btn"></i>
+		</div>
+	  </header>
+
+    <section>
+        <div class="contenedor-informacion-ps">
+            <img src="../../Img/fondo-info/Siderman No Hay Home.png" alt="Spiderman No Hay Home">
+            <div class="informacion">
+                <h1>Spiderman No Hay Home</h1>
+                <p>Spider-Man: No Way Home (titulada Spider-Man: Sin camino a casa en Hispanoamérica) es una película estadounidense de superhéroes basada en el 
+                    personaje Spider-Man, de Marvel Comics, coproducida por Columbia Pictures y Marvel Studios, y distribuida por Sony Pictures Releasing. </p>
+
+                <p>Es la secuela de Spider-Man: Homecoming (2017) y Spider-Man: Lejos de casa (2019), y la película número 27 en el Universo cinematográfico de Marvel (MCU). </p>
+                    
+                <p>En la película, Peter Parker le pide al Dr. Stephen Strange (Cumberbatch) que lo ayude a hacer de su identidad como Spider-Man un secreto después de su revelación pública, lo que lleva a la ruptura del multiverso al permitir que cinco supervillanos de realidades alternativas ingresen al universo de Peter Parker.</p>
+
+                <a target="u_blank" href="https://www.youtube.com/watch?v=E8tvtQB6rBM"><i class='bx bx-play-circle'> Duración: 148 Minutos</i></a>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+      <script>
+        //javascript for navigation bar effect on scroll
+window.addEventListener("scroll", function(){
+	var header = document.querySelector("header");
+	header.classList.toggle('down', window.scrollY > 0);
+
+	  //change logo
+	  var logo = document.querySelector(".brand img");
+	  if (window.scrollY>0) {
+		  logo.setAttribute('src', `../../Img/Logo/Movies.JPG`);
+	  }else{
+		  logo.setAttribute('src', '../../Img/Logo/Movies.JPG');
+	  }
+
+  });
+
+  //javascript for responsive navigation sidebar menu
+  var menu = document.querySelector('.menu');
+  var menuBtn = document.querySelector('.menu-btn');
+  var closeBtn = document.querySelector('.close-btn');
+
+  menuBtn.addEventListener("click", () => {
+	menu.classList.add('active');
+  });
+
+  closeBtn.addEventListener("click", () => {
+	menu.classList.remove('active');
+  });
+    </script>
+	<script src="./Js/Glider.js-master/glider.min.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="./Js/app.js"></script>
+</body>
+</html>

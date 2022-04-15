@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../../Img/Logo/Movies.JPG">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="../Js/Glider.js-master/glider.min.css">
+	<link rel="stylesheet" href="../../Css/estilos.css">
+	<link rel="stylesheet" href="../../Css/menu-peliculas.css">
+    <title>Movies</title>
+</head>
+<body>
+    <!-- Menu -->
+	<header>
+		<a href="../../index.html" class="brand">
+			<img src="../../Img/Logo/Movies.JPG">
+		</a>
+		<nav class="menu">
+		  <div class="btn">
+			<i class="fas fa-times close-btn"></i>
+		  </div>
+		  <ul>
+			  <li><a href="../../index.html">Inicio</a></li>
+			  <li><a href="../index-2.html">Sobre nosotros</a></li>
+		  </ul>
+		</nav>
+		<div class="btn">
+		  <i class="fas fa-bars menu-btn"></i>
+		</div>
+	  </header>
+
+    <section>
+        <div class="contenedor-informacion-ps">
+            <img src="../../Img/fondo-info/Jujutsu Kaisen 0.png" alt="Jujuts Kaisen 0">
+            <div class="informacion">
+                <h1>Jujutsu Kaisen 0</h1>
+                <p>Cuando eran niños, Rika Orimoto murió en un accidente de tráfico ante los ojos de su mejor amigo,
+                     Yuta Okkotsu. “Es una promesa. Cuando seamos grandes, nos casaremos”. Rika se convirtió en un espíritu y Yuta llegó a desear su propia muerte tras sufrir su maldición, 
+                    pero el gran hechicero Gojo Satoru (Satoru Gojo) le dio la bienvenida a la Academia de Hechicería.</p>
+
+                <p>“Estando en la Academia de Hechicería podré romper la maldición de Rika”. Mientras tanto, el malvado usuario de maldiciones Suguro Geto, quien fue expulsado de la
+                     academia de hechicería por asesinar a inocentes, aparece ante Yuta y el resto.</p>
+                    
+                <p> Geto aspira a crear un paraíso exclusivo para hechiceros y decide liberar miles de maldiciones en Shinjuku y Kyoto para exterminar a todos los que no son hechiceros. ¿Podrá Yuta detener a Geto? ¿Y qué ocurrirá con lo de romper la maldición de Rika?</p>
+
+                <a target="u_blank" href="https://www.youtube.com/watch?v=h3YKB_XWcb4"><i class='bx bx-play-circle'> Duración: 105 Minutos</i></a>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+      <script>
+        //javascript for navigation bar effect on scroll
+window.addEventListener("scroll", function(){
+	var header = document.querySelector("header");
+	header.classList.toggle('down', window.scrollY > 0);
+
+	  //change logo
+	  var logo = document.querySelector(".brand img");
+	  if (window.scrollY>0) {
+		  logo.setAttribute('src', `../../Img/Logo/Movies.JPG`);
+	  }else{
+		  logo.setAttribute('src', '../../Img/Logo/Movies.JPG');
+	  }
+
+  });
+
+  //javascript for responsive navigation sidebar menu
+  var menu = document.querySelector('.menu');
+  var menuBtn = document.querySelector('.menu-btn');
+  var closeBtn = document.querySelector('.close-btn');
+
+  menuBtn.addEventListener("click", () => {
+	menu.classList.add('active');
+  });
+
+  closeBtn.addEventListener("click", () => {
+	menu.classList.remove('active');
+  });
+    </script>
+	<script src="./Js/Glider.js-master/glider.min.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="./Js/app.js"></script>
+</body>
+</html>

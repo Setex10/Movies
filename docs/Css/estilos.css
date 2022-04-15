@@ -2,6 +2,10 @@
 	box-sizing: border-box;
 }
 
+a{
+	text-decoration: none;
+	color: #fff;
+}
 body {
 	background: #1D1D1F;
 	color: #fff;
@@ -29,10 +33,20 @@ body {
 	transition: 0.6s;
 	height: 70px;
   }
+
+  header #menu01{
+	background: #444444;
+	padding:5px;
+  }
   
   header.down {
 	background: #000000;
 	padding: 15px 80px;
+  }
+
+  header.down #menu01{
+	  background: #444444;
+	  padding:5px;
   }
   
   header .brand {
@@ -159,6 +173,7 @@ body {
 	max-width: 550px;
 }
 
+
 .contenido-principal__contenedor {
 	width: 50%;
 }
@@ -254,6 +269,12 @@ body {
     height: 180px;
 }
 
+.carousel__elemento img:hover{
+	width: 285px;
+	height: 185px;
+	transition: 0.5s;
+}
+
 h2{
     text-align:left;
     font-size:20px;
@@ -272,3 +293,4 @@ h3{
 .noticias{
 	Display: flex;
 }
+

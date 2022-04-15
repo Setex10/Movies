@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../../Img/Logo/Movies.JPG">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="../Js/Glider.js-master/glider.min.css">
+	<link rel="stylesheet" href="../../Css/estilos.css">
+	<link rel="stylesheet" href="../../Css/menu-peliculas.css">
+    <title>Movies</title>
+</head>
+<body>
+    <!-- Menu -->
+	<header>
+		<a href="../../index.html" class="brand">
+			<img src="../../Img/Logo/Movies.JPG">
+		</a>
+		<nav class="menu">
+		  <div class="btn">
+			<i class="fas fa-times close-btn"></i>
+		  </div>
+		  <ul>
+			  <li><a href="../../index.html">Inicio</a></li>
+			  <li><a href="../index-2.html">Sobre nosotros</a></li>
+		  </ul>
+		</nav>
+		<div class="btn">
+		  <i class="fas fa-bars menu-btn"></i>
+		</div>
+	  </header>
+
+    <section>
+        <div class="contenedor-informacion-ps">
+            <img src="../../Img/fondo-info/Evangelion.png" alt="Evangelion">
+            <div class="informacion">
+                <h1>Evangelion</h1>
+                <p>Neon Genesis Evangelion (新世紀エヴァンゲリオン, Shin Seiki Evangerion ?), también conocida simplemente como Evangelion,​ o Eva,​​ es una serie de anime creada por el estudio Gainax y dirigida por Hideaki Anno.</p>
+
+                <p>La historia de la obra se da lugar en un mundo futurista en el que una organización paramilitar llamada NERV protege a la humanidad de los ataques de seres de origen y naturaleza desconocidos, los «Ángeles», utilizando para ello bio mechas humanoides llamados Evangelion (acortado a EVA).</p>
+                    
+                <p>A medida que avanza la trama, esta se vuelve paulatinamente más confusa y psicológica, en donde las personalidades de los personajes se hacen cada vez más inestables y su desarrollo se torna fundamental.</p>
+
+                <a target="u_blank" href="https://www.netflix.com/mx/title/81033445"><i class='bx bx-play-circle'>Temporadas:1<br>Capitulos: 26</i></a>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+      <script>
+        //javascript for navigation bar effect on scroll
+window.addEventListener("scroll", function(){
+	var header = document.querySelector("header");
+	header.classList.toggle('down', window.scrollY > 0);
+
+	  //change logo
+	  var logo = document.querySelector(".brand img");
+	  if (window.scrollY>0) {
+		  logo.setAttribute('src', `../../Img/Logo/Movies.JPG`);
+	  }else{
+		  logo.setAttribute('src', '../,,/Img/Logo/Movies.JPG');
+	  }
+
+  });
+
+  //javascript for responsive navigation sidebar menu
+  var menu = document.querySelector('.menu');
+  var menuBtn = document.querySelector('.menu-btn');
+  var closeBtn = document.querySelector('.close-btn');
+
+  menuBtn.addEventListener("click", () => {
+	menu.classList.add('active');
+  });
+
+  closeBtn.addEventListener("click", () => {
+	menu.classList.remove('active');
+  });
+    </script>
+	<script src="../../Js/Glider.js-master/glider.min.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="./Js/app.js"></script>
+</body>
+</html>

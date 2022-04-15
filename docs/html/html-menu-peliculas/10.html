@@ -5,26 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="../Img/Logo/Movies.JPG">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="../Js/Glider.js-master/glider.min.css">
-	<link rel="stylesheet" href="../Css/estilos.css">
-	<link rel="stylesheet" href="../Css/index-2.css">
+	<link rel="stylesheet" href="../../Css/estilos.css">
+	<link rel="stylesheet" href="../../Css/menu-peliculas.css">
     <title>Movies</title>
 </head>
 <body>
     <!-- Menu -->
 	<header>
-		<a href="../index.html" class="brand">
-			<img src="../Img/Logo/Movies.JPG">
+		<a href="../../index.html" class="brand">
+			<img src="../../Img/Logo/Movies.JPG">
 		</a>
 		<nav class="menu">
 		  <div class="btn">
 			<i class="fas fa-times close-btn"></i>
 		  </div>
 		  <ul>
-			  <li><a href="../index.html">Inicio</a></li>
-			  <li id="menu02" ><a href="index-2.html">Sobre nosotros</a></li>
+			  <li><a href="../../index.html">Inicio</a></li>
+			  <li><a href="../index-2.html">Sobre nosotros</a></li>
 		  </ul>
 		</nav>
 		<div class="btn">
@@ -32,46 +33,23 @@
 		</div>
 	  </header>
 
-	  <div  class="contenedor">
-		<main class="contenido-principal">
-			<img  id="Inicio" src="../Img/Logo/Movies.JPG" alt="Movies" class="contenido-principal__imagen">
-			<div class="contenido-principal__contenedor">
-				<h1 class="contenido-principal__titulo">Sobre Nosotros</h1>
-				<p class="contenido-principal__resumen">
-					Esta pagina trata (por el momento) solo de recomendar series y/o peliculas
-					de todo tipo de género, ya sea desde peliculas o series infantiles, hasta 
-					peliculas como puede ser para gente un poco mas mayor
-				</p>
-				<p class="contenido-principal__resumen">
-					Esta página sigue en desarrollo, por lo que el contendio de la página puede ir
-					actualizándose constantemente con el paso del tiempo.
-				</p>
-			</div>
-		</main>
-		</div>
+    <section>
+        <div class="contenedor-informacion-ps">
+            <img src="../../Img/fondo-info/" alt="">
+            <div class="informacion">
+                <h1</h1>
+                <p></p>
 
-		<footer>
-			<div class="contenedor-contactar">
-				<h4>Contáctanos</h4>
-				<div class="formulario">
-					<form action="https://formspree.io/f/mdobdjzr"
-				method="POST">
+                <p></p>
+                    
+                <p></p>
 
-					<input class="email" type="email" name="email" placeholder="Email">
-					<textarea class="mensaje" name="message" placeholder="Mensaje"></textarea>
-				<!-- your other form fields go here -->
-				<button class="enviar" type="submit">Enviar</button>
-			</form>
-				</div>
-		</div>
-	    </footer>
+                <a target="u_blank" href=""><i class='bx bx-play-circle'></i></a>
+            </div>
+        </div>
+    </section>
 
-
-
-
-
-
-
+    
 
 
 
@@ -84,9 +62,9 @@ window.addEventListener("scroll", function(){
 	  //change logo
 	  var logo = document.querySelector(".brand img");
 	  if (window.scrollY>0) {
-		  logo.setAttribute('src', `../Img/Logo/Movies.JPG`);
+		  logo.setAttribute('src', `../../Img/Logo/Movies.JPG`);
 	  }else{
-		  logo.setAttribute('src', '../Img/Logo/Movies.JPG');
+		  logo.setAttribute('src', '../../Img/Logo/Movies.JPG');
 	  }
 
   });
